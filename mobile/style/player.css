@@ -1256,8 +1256,8 @@ body{position:fixed;}
 .video-center-button{
 	position: absolute;
 	z-index : 50;
-	width:56px;
-	height:56px;
+	width:34%;
+	height:40%;
 	margin:auto;
 	left : 0px;
 	top : 0px;
@@ -1265,6 +1265,7 @@ body{position:fixed;}
 	bottom : 0px;
 	cursor : pointer;
 	opacity : 0.8;
+
 	background : url(icon/play.png) center center no-repeat;
 	background-size: contain;
 	border:0px solid #FFD666;

@@ -17,7 +17,7 @@
 .phone.extendedBar .arrow{position:absolute;width:50px;height:20px;left:50%;cursor:pointer;margin-left:-25px;border-radius:5px 5px 0 0;top:-20px;background-color:rgba(0,0,0,0.8);}
 .phone.extendedBar .arrow img{width:10px;margin:5px 20px;}
 
-.extendedBar.phone{border-bottom:1px solid rgba(255,255,255,0.1);overflow : hidden;position : absolute;bottom:-280px;z-index: 99;border-radius:0;background:#000000;width:100%;height:72px;}
+.extendedBar.phone{border-bottom:1px solid rgba(255,255,255,0.1);overflow : hidden;position : absolute;bottom:-280px;z-index: 98;border-radius:0;background:#000000;width:100%;height:72px;}
 .extendedBar.phone .button{width : 40px;height : 52px;border-radius: 0;float:left;margin:10px 0 0 30px;position:relative;text-align:center;}
 .extendedBar.phone .button .icon{overflow:hidden;position:relative;display:block;width:32px;height:32px;border-radius:16px;background-color:rgba(255,255,255,0.1);margin:0 0 0 4px;}
 .extendedBar.phone .button img{left:-25px;display:block;width:18px;height:18px;position:absolute;top:7px;margin:0;}
@@ -25,7 +25,6 @@
 .extendedBar.phone .button span{top:0;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;color : white;line-height:20px;display:block;position:relative;margin:0 0 0 -15px;width:70px;}
 .extendedBar.phone .button img.custom{left:7px;}
 .extendedBar.phone .svg-box{width : 14px;height : 14px;cursor : pointer;margin: 3px 0 0 18px;}
-.extendedBar.phone .cancel{width: 100%;height: 40px;position: absolute;bottom: -41px;text-align: center;line-height: 40px;}
 
 .extendedBar.phone .stage{height:100%;}
 .extendedBar.phone .stage .swiper{height:100%;}
@@ -91,10 +90,10 @@
 }
 
 .form_mask_phone{opacity:0.5;background:#000000;z-index:9999;position:absolute;width:100%;height:100%;top:0;left:0;}
-.phone .form_title{text-align:center;vertical-align:middle;font-family:"Arial";font-size:18px;line-height:20px; padding: 0 20px;margin:0; margin: 15px 0;}
+.phone .form_title{text-align:center;vertical-align:middle;font-family:"Arial";font-size:15px;line-height:20px; padding: 0 20px;margin:0; margin: 10px 0;}
 .phone .form_title span{margin:0;line-height: 20px;padding:0;}
-.phone .close{top:13px;position:absolute;cursor:pointer;left:auto;left:10px;padding:0;margin:0;width:25px;height:25px;}
-.phone.rightToLeft .close{top:13px;position:absolute;cursor:pointer;left:10px;}
+.phone .close{top:8px;position:absolute;cursor:pointer;left:auto;right:13px;padding:0;margin:0;}
+.phone.rightToLeft .close{top:8px;position:absolute;cursor:pointer;right:13px;}
 
 /* .print_form_phone */
 .print_form_phone{text-align:left;vertical-align:middle;line-height:20px;position:absolute;left:0;top:0;z-index:1000;background:#000000;width:310px;padding:0;color:#ffffff;font-size:15px;font-family:Calibri;position:absolute;}
@@ -161,6 +160,8 @@
 .bookmark_form_phone .item{position:relative;width:100%;height:100px;line-height:100px;vertical-align:middle;font-size:15px;cursor:pointer;}
 .bookmark_form_phone .item span{margin:0 10px;float:left;display:inline-block;width:auto;}
 .bookmark_form_phone .item img{height:76px;float:left;margin:12px 0;position:relative;}
+.bookmark_form_phone .item .delete{position:absolute;cursor:pointer;top:30px;left:auto;right:10px;width:41px;height:41px;background-position:-402px -429px;background-image: url(phoneIcon/phone_icon.png);background-repeat: no-repeat;}
+.bookmark_form_phone .item .delete:hover{background-position:-462px -429px;}
 .bookmark_form_phone{background:transparent;width:100%;height:100%;padding:0;left:0;top:0;margin:0;border-radius: 0;border:none;box-shadow: none;filter:none;
 -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -172,9 +173,8 @@
 .bookmark_form_phone.rightToLeft .item img{float:right;}
 .bookmark_form_phone.rightToLeft .item span{float:right;}
 .bookmark_form_phone.rightToLeft .item .delete{left:20px;right:auto;}
-.bookmark_form_phone .item .delete{position:absolute;cursor:pointer;top:30px;left:auto;right:20px;width:41px;height:41px;background-repeat: no-repeat;}
-.bookmark_form_phone .item .delete{background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAADE0lEQVRYhc2Z344URRSHv+6wiX9n4qUGSLxYNMb4AhovYF8BMOKKjC8grERfwvdAbvFSWTXsGi4xZGPkYoma9dIwq+gN83lRp+lmwyxd3ds7e5KTmspU/eqb6qnqU6cKlY72KnAGeA94E1gGXgTGwAPgH+Ae8AtwC/gO+LPTSGqOL6kfqTfVR+bZI3VdXQ2d1uO2bViol9TtxqAP1W/UNXVFPamOo/046ivqlWj3sNF3W52E7oFALqsbjQG21E8bQG19HP22Globod8L8rz6IAR31A/VMhNur5ehsxO6U/WDrpCfqbMQut5h5trM7PXQn5n+FlmQVxqdrx4w3F6/2piMtbaQ56LTzLRYhgSs/FJjzHPPgjxl+o+ofnFIgJV/GeNO1TfmQRbWq/jaIQNWfi3G37SxPe2dck2r7qAXSVsfW6/6yV7IJeuN+sKCACu/EBz3g+sx5Gp8sWX/fbCvl9Yb/qpKGa/wSZRfAbOOAQeADe9qs+B4zFWorwG/A/+RIptpBlCuFS3bjUgR03PA8RI4DZTAOu0Bh7YpiacEzpTAu/HFzUyhooPn2HqU7x8D3orKz5kikPfIcyHvRPl2CbwelXuZIkPbr1GePEYK9wH+6iG43yx1XekVz6hQK5Hcx9EEKOLzvLKXfkm9okcdRIa0l6PcLUknO4BXFgQzzyqeaQlsR2V5QTDz7FSUv5XAVlTeWRDMPKt47pbARlRO9xQt5pRdreL5sXp3/wH8S967G4bbzKt39/PEu3sH2AReAM5mCA1pZ0k8m8BOFcN9fETjyYvNoHcpImE9wpE5pjOFHuEzDqbT2WY0WPRp8SfnnBYxnXeP9Lm78mYG4+IhAX5iRgaj8s/jV83UywMDXrbOBT0177Rf5zWHz6p93ZiMpyarngWJKW+4G0JD5Sd37ZGfrHxZvW1tfTK9E5/M9N42Jcn27Zvz6yfWG76mHPgNUy5zRT2hjqL9KOpVzvyGT+bM74deq6eS+6iWTKmP7+12+/CDHW4fCu11j7NCOrdX9zgvkSKYKfA39T3OBvAtHe9x/gdbb3TyIW2ytgAAAABJRU5ErkJggg==");}
-.bookmark_form_phone .item .delete:hover{background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAACkklEQVRYhc3ZzW8NURjH8c+dXLqgrIl4WRARG8SiXhP1N9BYVfkDBGFnwVIbe0StaPwNdCEqIl42IqoLSsJaby2aJq7FmZHpNfdlpnPv7TeZTGbmnPP85rw+zzmVd+vXK8gWDOMY9mI3NmAzfuE35vAJL/AMP4sYquQUuQ5nMYaTiHLk/YPneIApLHeasVORFYziBnbmENaMr7iFSdTbGu9A5G48xJFVCsvipfDzc60StWuus3ijOwLF5b7FSKtErURewmNsKlFUFoN4hMvNEjQTeRl3hL7YCyqYwJWsj1kiz2C8m4pacDu2v4LGgbNH6IODPRKVRQ2HMZu8SNdkRZgS+ilQbH9SqqulRY7q3ijOyxDOJw9Jc6/DZ+VM1GUxL8zRy0lNjlhbAmGHeP5MRI6VUeqBpaV/V0mMEZp7K77L5ywUEvJ+YCBvlj/YFuGUnAJ7SIThKo4WyV2gVopyoop9RXPnafJV/NT+CLuK5u4R26uCu78qWtVSCSN9U6QkVywR03gvgcEIC2WV1iVqkRDZrWUWInzpt4o2fIvwsd8q2vAhwkwZJSUjvPFeAs+rmBZi38LxTIkjuZE6piP8EOLftchL/KjGD3cVWMN7sH7fY6VnPic4mmuF/zzzZdzsn55Mboo3tdIhbUUY6UN9EpXmlRAU1lnp7NaFCK3WB1FpakLk+m+3rdEjn8VFHWzHdYl6bH82/TIrbHiCa71QlMH12P4KmsU247iqdzVaj+3dzvrYKgCbwDksdkFUmsXYzkSzBO2ixCkcxOsSRaV5jUOxnaZ0EsrOCdPSBWGCLYP5uLwhYXunJUVOH0ZiA8flP314gfu6dPqQxRacFtb85BxnoxAzLQh9LTnHmcFTBc9x/gIyhJDrY4ZjgQAAAABJRU5ErkJggg==")}
+.bookmark_form_phone .item .delete{position:absolute;cursor:pointer;top:30px;left:auto;right:20px;width:41px;height:41px;background-position:-402px -429px;background-image: url(phoneIcon/phone_icon.png);background-repeat: no-repeat;}
+.bookmark_form_phone .item .delete:hover{background-position:-462px -429px;}
 
 /* search_form_phone */
 .search_form_phone{text-align:left;vertical-align:middle;line-height:20px;position:absolute;z-index:1000;left:-300px;top:0;width:250px;height:548px;background:#000000;
@@ -227,7 +227,7 @@
 .tableofcontent_form_phone{background:transparent;width:100%;height:100%;padding:0;left:0;top:0;margin:0;border-radius:0;border:none;box-shadow: none;filter:none;}
 .tableofcontent_form_phone .stage{position:relative;margin:0 20px;}
 
-.phone .searchButton{position:absolute;top:70px;right:20px;cursor:pointer;z-index:10;max-width:25px;max-height:25px;transform: translate(0, -50%);}
+.phone .searchButton{position:absolute;top:61px;right:20px;cursor:pointer;z-index:10;max-width:25px;max-height:25px;transform: translate(0, -50%);}
 .phone .input_search{background-color:#fff;border-radius:5px;margin:0 20px;height:40px;line-height:40px;padding:0 25px 0 10px;width:275px;border:1px solid transparent;}
 .phone.rightToLeft .searchButton{left:20px;right:0;}
 .phone.rightToLeft .input_search{padding:0 10px 0 25px;}
@@ -302,8 +302,32 @@
 .share_form_phone .item .logo_title{line-height: 30px;font-size:12px;}
 .share_form_phone .item .logo div{width:40px;height:40px;}
 
-.share_form_phone .progress{width: 10px;right: 0;position: absolute;}
-.share_form_phone .progressBar{cursor:pointer;background: rgba(0, 0, 0, 0.3); position: absolute; left: 0px; width: 10px;border-radius:5px;}
+
+/* download_form_phone */
+.download_form_phone{text-align:left;vertical-align:middle;line-height:20px;width:430px;position:absolute;left:0;top:0;z-index:1000;background:#000000;padding:10px;color:#ffffff;font-size:12px;font-family:Calibri;}
+.download_form_phone .content{position:relative;padding:10px;}
+.download_form_phone .item{border:1px solid rgba(255,255,255,0.25);padding: 0 15px;height:64px;line-height:64px;font-size:16px;}
+.download_form_phone .item.middle{margin:10px 0;}
+.download_form_phone .item img{float: left;display: inline-block;width: 32px;height: 32px;margin: 16px 0;}
+.download_form_phone .item span{margin: 0 10px;font-weight: bold;}
+.download_form_phone .item a{border:1px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.25);text-decoration:none;cursor: pointer; float: right;padding: 0px 5px;width: 90px;height: 30px;margin: 16px 0;line-height: 30px;text-align: center;border: 1px solid #333;}
+.download_form_phone .item a:hover{opacity: 0.7;}
+.download_form_phone .item select{outline: none;font-size:14px;padding: 6px;width: 222px;margin: 0 10px;height: 32px;}
+.download_form_phone .item select option{padding:5px 0;}
+
+.download_form_phone.rightToLeft{text-align:right;}
+.download_form_phone.rightToLeft .item img{float:right;}
+.download_form_phone.rightToLeft .item a{float:left;}
+.download_form_phone .downloadButton{margin:20px 0;width:auto;}
+
+.download_form_phone{background:transparent;width:100%;padding:0;}
+.download_form_phone{border-radius:0;}
+.download_form_phone .content{padding:0 15px;padding-top:0;border-radius:0;}
+.download_form_phone .item{border-radius:0;padding: 0 16px 0 13px;overflow: hidden;text-align: right;height: auto;line-height: 64px;}
+.download_form_phone .item span{margin:0;}
+.download_form_phone .item a{margin: 0 0 16px; width: 94%;border-radius: 0;}
+.download_form_phone .item select{width:82%;margin:0;border-radius: 0;}
+.download_form_phone.rightToLeft .item{text-align:left;padding:0px 15px 0 15px;border-radius:0;}
 
 /* thumbnail_form_phone */
 
@@ -487,20 +511,12 @@
 .videogallery_form_phone.rightToLeft .item .thumbnail{left:auto;right:0;}
 .videogallery_form_phone.rightToLeft .progress{left:-5px;right:auto;}
 
-/* download_form_phone */
-.download_form_phone{font-size:15px;width:100%;height:100%;left:0;vertical-align:middle;font-family:Arial,Tahoma;background:transparent;z-index:1;}
-.download_form_phone .stage{margin:0;width:100%;height:100%;}
-.download_form_phone .content{position:relative;}
+/* .appear_win10{position:absolute;opacity:0;z-index:1001;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.5);text-align:center;vertical-align:middle;}
+.appear_win10 .main_dom{position:relative;display:inline-block;left:0;top:0;}
+.appear_win10:after{content:""; display:inline-block; height:100%;vertical-align:middle;}
 
-.download_form_phone .content2{height: 196px;}
-.download_form_phone .pictureList_win10{margin-left:-75px;left:50%;border:none;}
+.button_hover:hover{opacity:0.7;filter:alpha(opacity=40);}
+.button_hover:active{opacity:0.2;filter:alpha(opacity=20);}
 
-.download_form_phone .downloadButton{cursor:pointer;width:auto;font-size:15px;height:40px;margin:10px 20px;background:rgba(255,255,255,0.25);line-height:40px;vertical-align: middle;text-align:center;}
-.download_form_phone .item{cursor:pointer;line-height:20px;height:20px;vertical-align: middle;position:relative;margin:0 20px;padding:10px 20px 10px;border-bottom:1px solid rgba(255,255,255,0.2);}
-.download_form_phone .item span{margin-left:12px;vertical-align: middle;}
-.download_form_phone .item img{vertical-align: middle;position:absolute;left:10px;top:13px;}
-.download_form_phone .downloadAttachments input{padding:0 5px;width:102px;height:30px;border:none;margin-left:10px;font-size:12px;}
-.download_form_phone .content1 select{margin:10px;width:80%;color:#989898;height:30px;border:none;border-radius:0;outline:none;}
-.download_form_phone .select_content{margin:0 20px;border-bottom:1px solid rgba(255,255,255,0.2);}
-
-.download_form_phone.rightToLeft .item img{vertical-align: middle;position:absolute;right:10px;}
+.disable{opacity:0.2;filter:alpha(opacity=20);}
+.usable{opacity:1;filter:alpha(opacity=100);} */
